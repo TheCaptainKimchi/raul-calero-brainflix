@@ -2,6 +2,7 @@ import logo from "../../assets/images/BrainFlix-logo.svg";
 import search from "../../assets/images/icons/search.svg";
 import avatar from "../../assets/images/Mohan-muruge.jpg";
 import upload from "../../assets/images/icons/upload.svg";
+import "../../styles/Header.scss";
 
 function Header() {
   return (
@@ -11,16 +12,14 @@ function Header() {
       </a>
       <div className="header__tools">
         <form className="header__tools-form">
-          <a>
-            <img src={search} className="header__tools-form-icon"></img>
-            <input
-              type="text"
-              src={search}
-              placeholder="Search"
-              name="search"
-              className="header__tools-form-input"
-            ></input>
-          </a>
+          <img src={search} className="header__tools-form-icon"></img>
+          <input
+            type="text"
+            src={search}
+            placeholder="Search"
+            name="search"
+            className="header__tools-form-input"
+          ></input>
         </form>
         <a className="header__tools-avatar">
           <img src={avatar}></img>
@@ -29,7 +28,7 @@ function Header() {
       <a className="header__upload">
         <button className="header__upload-button">
           <img src={upload} className="header__upload-button-icon"></img>
-          UPLOAD
+          <h3>UPLOAD</h3>
         </button>
       </a>
     </div>
