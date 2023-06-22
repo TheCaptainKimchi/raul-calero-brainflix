@@ -1,11 +1,12 @@
 import "./App.scss";
 import Header from "./components/Header/Header";
+import Player from "./components/Player/Player";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <div className="player"></div>
+      <Player />
       <main>
         <div className="left">
           <div className="video-details"></div>
