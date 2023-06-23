@@ -1,8 +1,10 @@
+import MainLeft from "./MainLeft/MainLeft";
+
 function Main() {
   return (
     <main>
       <MainLeft />
-      <MainRight />
+      {/* <MainRight /> */}
     </main>
   );
 }
