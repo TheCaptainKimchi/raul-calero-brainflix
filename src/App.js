@@ -9,14 +9,6 @@ function App() {
       <Header />
       <Player />
       <Main />
-      <main>
-        <div className="right">
-          <h3>title</h3>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-        </div>
-      </main>
     </div>
   );
 }
