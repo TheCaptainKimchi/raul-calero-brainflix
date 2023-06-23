@@ -1,6 +1,6 @@
 import LeftDetails from "./LeftDetails/LeftDetails";
 import LeftForm from "./LeftForm/LeftForm";
-import LeftFLeftCommentsorm from "./LeftForm/LeftComments";
+import LeftComments from "./LeftForm/LeftComments";
 
 function MainLeft() {
   return (
@@ -9,8 +9,6 @@ function MainLeft() {
       <LeftDetails />
       <LeftForm />
       <LeftComments />
-      {/* 
-      <div className="main__left-comments"></div> */}
     </div>
   );
 }

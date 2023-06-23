@@ -1,5 +1,7 @@
+import "../../../../styles/LeftComments.scss";
+
 function LeftComments() {
-  return;
+  return <div className="comments"></div>;
 }
 
 export default LeftComments;
