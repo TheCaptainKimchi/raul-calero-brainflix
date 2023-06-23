@@ -1,0 +1,61 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    &__total-comments {
+        padding-left: 1rem;
+        margin: 0;
+        padding-bottom: 0.5rem;
+    }
+    &__container {
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        &-left {
+            padding: 1.75rem 1rem 0 0;
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+            }
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &-title {
+                margin: 0;
+                padding-bottom: 0.5rem;
+                color: #AFAFAF;
+            }
+            &-input {
+                height: 5rem;
+                padding: 0 0 3rem 0.75rem;
+                border-radius: 5px;
+                border: 1px #E1E1E1 solid;
+                background-color: #FAFAFA;
+            }
+            &-input::placeholder {
+                color: #323232;
+            }
+            &-post {
+                width: 100%;
+                margin-top: 1.25rem;
+                button {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                background-color: #0095FF;
+                border: 0;
+                border-radius: 4px;
+                padding: 0 2rem;
+                p {
+                    color: white;
+                    padding-left: 35%;
+                }
+            }
+        }
+        }
+    }
+
+}
