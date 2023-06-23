@@ -1,0 +1,45 @@
+.details {
+    padding: 1rem;
+    &__title {
+        border-bottom: 1px grey solid;
+        margin: 0;
+        padding: 0.5rem 0 1rem 0;
+    }
+    &__sub-info {
+        border-bottom: 1px grey solid;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .details__left {
+            margin-right: 5rem;
+            &-date {
+                color: #AFAFAF;
+            }
+        }
+        .details__right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-views {
+                display: flex;
+                &-icon {
+                    padding-right: 0.5rem;
+                    fill: #AFAFAF;
+                }
+                p {
+                    color: #AFAFAF;
+                }
+            }
+            &-likes {
+                display: flex;
+                &-icon {
+                    padding-right: 0.5rem;
+                    fill: #AFAFAF;
+                }
+                p {
+                    color: #AFAFAF;
+                }
+            }
+        }
+    }
+}
