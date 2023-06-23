@@ -1,11 +1,11 @@
 import MainLeft from "./MainLeft/MainLeft";
 import MainRight from "./MainRight/MainRight";
 
-function Main() {
+function Main(props) {
   return (
     <main>
       <MainLeft />
-      <MainRight />
+      <MainRight Videos={props.Videos} />
     </main>
   );
 }
