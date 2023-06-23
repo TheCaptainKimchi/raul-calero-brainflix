@@ -1,0 +1,37 @@
+.comments {
+    &__card {
+        margin: 1rem;
+        display: flex;
+        border-bottom: 1px solid #E1E1E1;
+        &-left {
+            padding-right: 1rem;
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+                background-color: #E1E1E1;
+                border-radius: 50%;
+            }
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            &-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h3, p {
+                    margin: 0;
+                }
+                p {
+                    color: #AFAFAF;
+                }
+            }
+            &-bottom {
+                p {
+                    margin: 0;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}

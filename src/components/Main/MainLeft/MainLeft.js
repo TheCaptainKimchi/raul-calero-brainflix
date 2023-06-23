@@ -1,6 +1,6 @@
 import LeftDetails from "./LeftDetails/LeftDetails";
 import LeftForm from "./LeftForm/LeftForm";
-import LeftComments from "./LeftForm/LeftComments";
+import LeftComments from "./LeftComments/LeftComments";
 
 function MainLeft() {
   return (
