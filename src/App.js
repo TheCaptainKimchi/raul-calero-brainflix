@@ -10,11 +10,6 @@ function App() {
       <Player />
       <Main />
       <main>
-        <div className="left">
-          <div className="video-details"></div>
-          <div className="video-form"></div>
-          <div className="video-comments"></div>
-        </div>
         <div className="right">
           <h3>title</h3>
           <div className="card"></div>

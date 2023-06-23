@@ -1,12 +1,13 @@
 import LeftDetails from "./LeftDetails/LeftDetails";
+import LeftForm from "./LeftDetails/LeftForm";
 
 function MainLeft() {
   return (
     <div className="main__left">
       <div className="main__left-details"></div>
       <LeftDetails />
-      {/* <LeftForm />
-      <LeftComments /> */}
+      <LeftForm />
+      {/* <LeftComments /> */}
       {/* <div className="main__left-form"></div>
       <div className="main__left-comments"></div> */}
     </div>
