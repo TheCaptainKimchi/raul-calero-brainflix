@@ -8,6 +8,7 @@ function LeftForm(props) {
   return (
     <form className="form">
       <h3 className="form__total-comments">{`${VideoDetails.comments.length} Comments`}</h3>
+      <p className="form__subtitle">JOIN THE CONVERSATION</p>
       <div className="form__container">
         <div className="form__container-left">
           <img src={avatar}></img>
