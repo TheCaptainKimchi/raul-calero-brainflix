@@ -1,0 +1,7 @@
+@use "./partials/breakpoints" as *;
+
+.main {
+    @include desktop {
+        display: flex;
+    }
+}
