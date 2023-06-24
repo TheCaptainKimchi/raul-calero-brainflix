@@ -1,6 +1,7 @@
 import LeftDetails from "./LeftDetails/LeftDetails";
 import LeftForm from "./LeftForm/LeftForm";
 import LeftComments from "./LeftComments/LeftComments";
+import "../../../styles/MainLeft.scss";
 
 function MainLeft(props) {
   return (

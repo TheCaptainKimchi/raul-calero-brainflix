@@ -8,7 +8,7 @@
         padding: 0.5rem 0 1rem 0;
     }
     &__sub-info {
-        border-bottom: 1px grey solid;
+        border-bottom: 1px #E1E1E1 solid;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -69,6 +69,15 @@
                     margin-left: 2rem;
                 }
             }
+        }
+    }
+    @include desktop {
+        padding: 2rem 0 0 7rem;
+        &__right {
+            padding-right: 1.5rem;
+        }
+        &__description {
+            padding-right: 1.5rem;
         }
     }
 }
