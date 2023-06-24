@@ -5,7 +5,11 @@ function Main(props) {
   return (
     <main>
       <MainLeft />
-      <MainRight Videos={props.Videos} />
+      <MainRight
+        Videos={props.Videos}
+        clickHandler={props.clickHandler}
+        VideoDetails={props.VideoDetails}
+      />
     </main>
   );
 }

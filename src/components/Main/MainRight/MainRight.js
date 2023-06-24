@@ -1,15 +1,23 @@
 import "../../../styles/MainRight.scss";
 
 function MainRight(props) {
-  const Videos = props.Videos;
+  const filteredVideos = props.Videos.filter((video) => {
+    return video.id !== props.VideoDetails.id;
+  });
+
   return (
     <div className="videos">
       <h3 className="videos__title">NEXT VIDEOS</h3>
       <div className="videos__container">
         <ul className="videos__container-card">
-          {Videos.map((Videos) => {
+          {filteredVideos.map((Videos) => {
             return (
-              <li key={Videos.id}>
+              <li
+                key={Videos.id}
+                onClick={() => {
+                  props.clickHandler(Videos);
+                }}
+              >
                 <img
                   className="videos__container-card-image"
                   src={Videos.image}
@@ -27,17 +35,3 @@ function MainRight(props) {
   );
 }
 export default MainRight;
-{
-  /* 
-<div>
-  <img
-    className="videos__container-card-image"
-    src="https://i.imgur.com/5qyCZrD.jpg"
-  ></img>
-</div>
-<div className="videos__container-card-text">
-  <h3>Become A Travel Pro In One Easy Lesson</h3>
-  <p>Todd Welch</p>
-</div>
-*/
-}
