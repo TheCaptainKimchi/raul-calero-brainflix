@@ -97,4 +97,15 @@
         }
 
     }
+    @include desktop {
+        padding: 1rem 6rem;
+        &__logo {
+            left: 8rem;
+        }
+        &__tools {
+            &-avatar {
+                right: 5rem;
+            }
+        }
+    }
 }
