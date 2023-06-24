@@ -1,3 +1,5 @@
+@use "../styles/partials/breakpoints" as *;
+
 .comments {
     &__cards {
         margin: 0 1rem;
@@ -38,6 +40,12 @@
                     }
                 }
             }
+        }
+    }
+
+    @include tablet {
+        &__cards {
+            margin: 0 2rem;
         }
     }
 }
