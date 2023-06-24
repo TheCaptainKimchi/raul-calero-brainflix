@@ -9,7 +9,7 @@ import Videos from "./data/videos.json";
 
 function App() {
   const [videoList, setvideoList] = useState(Videos);
-  const [videoInfo, setvideoInfo] = useState(VideoDetails[1]);
+  const [videoInfo, setvideoInfo] = useState(VideoDetails[0]);
 
   const clickHandler = (Videos) => {
     setvideoInfo(Videos);
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Player />
+      <Player VideoDetails={videoInfo} />
       <Main
         VideoDetails={videoInfo}
         Videos={videoList}
