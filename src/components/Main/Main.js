@@ -4,7 +4,7 @@ import MainRight from "./MainRight/MainRight";
 function Main(props) {
   return (
     <main>
-      <MainLeft />
+      <MainLeft VideoDetails={props.VideoDetails} />
       <MainRight
         Videos={props.Videos}
         clickHandler={props.clickHandler}

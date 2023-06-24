@@ -1,35 +1,41 @@
 .comments {
-    &__card {
-        margin: 1rem;
+    &__cards {
+        margin: 0 1rem;
         display: flex;
+        flex-direction: column;
         border-bottom: 1px solid #E1E1E1;
-        &-left {
-            padding-right: 1rem;
-            img {
+        padding: 0;
+        list-style: none;
+        .comments__card {
+            display: flex;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid grey;
+            &-left img {
                 width: 2.5rem;
                 height: 2.5rem;
-                background-color: #E1E1E1;
+                background-color: grey;
                 border-radius: 50%;
             }
-        }
-        &-right {
-            display: flex;
-            flex-direction: column;
-            &-top {
+            &-right {
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
-                h3, p {
-                    margin: 0;
+                flex-direction: column;
+                padding: 0 0 0 1rem;
+                &-top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h3, p {
+                        margin: 0;
+                    }
+                    p {
+                        color: #AFAFAF;
+                    }
                 }
-                p {
-                    color: #AFAFAF;
-                }
-            }
-            &-bottom {
-                p {
-                    margin: 0;
-                    padding: 1rem 0;
+                &-bottom {
+                    p {
+                        margin: 0;
+                        padding: 1rem 0 0.5rem 0;
+                    }
                 }
             }
         }
