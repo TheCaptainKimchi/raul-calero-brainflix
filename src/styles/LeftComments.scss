@@ -11,7 +11,7 @@
         .comments__card {
             display: flex;
             padding: 0.5rem 0;
-            border-bottom: 1px solid grey;
+            border-bottom: 1px solid #E1E1E1;
             &-left img {
                 width: 2.5rem;
                 height: 2.5rem;
@@ -46,6 +46,18 @@
     @include tablet {
         &__cards {
             margin: 0 2rem;
+        }
+    }
+    @include desktop {
+        &__cards {
+            padding: 1rem 0 2rem 7rem;
+            margin: 0;
+            .comments__card {
+                padding-right: 2rem;
+                padding: 1rem 2rem 1rem 0;
+                border-bottom: 0;
+                border-top: 1px solid #E1E1E1;
+            }
         }
     }
 }
