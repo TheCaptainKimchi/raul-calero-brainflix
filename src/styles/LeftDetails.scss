@@ -1,3 +1,5 @@
+@use "./partials/breakpoints" as *;
+
 .details {
     padding: 1rem;
     &__title {
@@ -38,6 +40,33 @@
                 }
                 p {
                     color: #AFAFAF;
+                }
+            }
+        }
+    }
+    @include tablet {
+        padding: 1rem 2rem;
+        &__title {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+        &__sub-info {
+            justify-content: space-between;
+            .details__left {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                h3, p {
+                    margin: 0;
+                }
+                &-author {
+                    padding-right: 2rem;
+                }
+            }
+            .details__right {
+                flex-direction: row;
+                &-likes {
+                    margin-left: 2rem;
                 }
             }
         }

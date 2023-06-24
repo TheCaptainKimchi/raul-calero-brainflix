@@ -25,12 +25,15 @@ function Header() {
           <img src={avatar}></img>
         </a>
       </div>
-      <a className="header__upload">
+      <div className="header__upload">
         <button className="header__upload-button">
           <img src={upload} className="header__upload-button-icon"></img>
           <h3>UPLOAD</h3>
         </button>
-      </a>
+        <a className="header__upload-avatar">
+          <img src={avatar}></img>
+        </a>
+      </div>
     </div>
   );
 }

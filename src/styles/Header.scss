@@ -1,3 +1,5 @@
+@use "../styles/partials/breakpoints" as *;
+
 .header {
     width: 100%;
     padding: 1rem;
@@ -69,5 +71,30 @@
                 width: 20rem;
             }
         }
+        &-avatar {
+            display: none;
+        }
+    }
+    @include tablet {
+        flex-direction: row;
+        justify-content: flex-end;
+        &__logo {
+            position: absolute;
+            left: 1rem;
+            z-index: 2;
+        }
+        &__tools {
+            width: 13rem;
+            margin-right: 1rem;
+            &-avatar {
+                position: absolute;
+                right: 1rem;
+            }
+        }
+        &__upload {
+            width: 13rem;
+            margin-right: 4rem;
+        }
+
     }
 }
