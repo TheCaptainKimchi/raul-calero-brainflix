@@ -1,7 +1,21 @@
+@use "./partials/breakpoints" as *;
+
 .player {
     background-color: #000000;
     video {
         width: 100%;
         aspect-ratio: 16/9;
+    }
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        video {
+            width: 90%;
+        }
+    }
+    @include desktop {
+        video {
+            width: 75%;
+        }
     }
 }
