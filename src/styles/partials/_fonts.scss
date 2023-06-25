@@ -1,0 +1,58 @@
+@use "./breakpoints" as *;
+@use "./variables" as *;
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format('opentype');
+}
+
+* {
+    font-family: "Avenir", sans-serif;
+}
+
+h1 {
+    font-size: $h1-m-size;
+    line-height: $h1-m-height;
+    font-weight: $h1-m-weight;
+    @include tablet {
+        font-size: $h1-size;
+        line-height: $h1-height;
+        font-weight: $h1-weight;
+    }
+}
+
+h2 {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    @include tablet {
+        font-size: $h2-size;
+        line-height: $h2-height;
+        font-weight: $h2-weight;
+    }
+}
+
+h3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    @include tablet {
+        font-size: $h3-size;
+        line-height: $h3-height;
+        font-weight: $h3-weight;
+    }
+}
+
+p {
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    @include tablet {
+        font-size: $p-size;
+        line-height: $p-height;
+        font-weight: $p-weight;
+    }
+}
+
+
+
