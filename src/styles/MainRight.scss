@@ -48,4 +48,23 @@
     @include tablet {
         padding: 0 2rem;
     }
+    @include desktop {
+        width: 100%;
+        padding-top: 1rem;
+        &__title {
+            font-size: 0.75rem;
+        }
+        &__container {
+            &-card {
+                li {
+                    margin: 0.5rem 0;
+                    .videos__container-card-text {
+                        h3 {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
