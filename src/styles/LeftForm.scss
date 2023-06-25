@@ -1,10 +1,11 @@
 @use "./partials/breakpoints" as *;
+@use "../styles/partials/variables" as *;
 
 .form {
     display: flex;
     flex-direction: column;
     &__total-comments {
-        padding-left: 1rem;
+        padding-left: $padding-s;
         margin: 0;
         padding-bottom: 0.5rem;
     }
@@ -14,9 +15,9 @@
     &__container {
         display: flex;
         width: 100%;
-        padding: 1rem;
+        padding: $padding-s;
         &-left {
-            padding: 1.75rem 1rem 0 0;
+            padding: 1.75rem $padding-s 0 0;
             img {
                 width: 2.5rem;
                 height: 2.5rem;
@@ -36,11 +37,14 @@
                 height: 5rem;
                 padding: 0 0 3rem 0.75rem;
                 border-radius: 5px;
-                border: 1px #E1E1E1 solid;
-                background-color: #FAFAFA;
+                border: 1px $s-mercury solid;
+                background-color: $s-alabaster;
             }
             &-input::placeholder {
-                color: #323232;
+                color: $p-black;
+            }
+            &-input:active {
+                border: $p-blue 2px solid;
             }
             &-post {
                 width: 100%;
@@ -50,16 +54,20 @@
                 width: 100%;
                 align-items: center;
                 justify-content: flex-start;
-                background-color: #0095FF;
+                background-color: $p-blue;
                 border: 0;
                 border-radius: 4px;
                 padding: 0 2rem;
                 p {
-                    color: white;
+                    color: $p-white;
                     padding-left: 35%;
                 }
+                }
+                button:hover {
+                    background-color: $s-blue;
+                    cursor: pointer;
+                }
             }
-        }
         }
     }
     @include tablet {
@@ -69,13 +77,13 @@
         }
         &__subtitle {
             display: flex;
-            margin: 1.5rem 0 0 3.5rem;
+            margin: $padding-m 0 0 3.5rem;
             color: #AFAFAF;
         }
         &__container {
             padding: 0.5rem 0 0.5rem 0;
             &-left {
-                padding: 0 1rem 0 0;
+                padding: 0 $padding-s 0 0;
             }
             &-right {
                 flex-direction: row;
@@ -87,8 +95,8 @@
                 &-input {
                     width: 100%;
                     height: 3rem;
-                    padding: 0 0 0 1rem;
-                    margin-right: 1rem;
+                    padding: 0 0 0 $padding-s;
+                    margin-right: $padding-s;
                 }
                 &-post {
                     width: 40%;
@@ -107,5 +115,14 @@
     @include desktop {
         padding-left: 7rem;
         padding-top: 2rem;
+        &__container {
+            &-right {
+                &-post {
+                    button {
+                        justify-content: center;
+                    }
+                }
+            }
+        } 
     }
 }

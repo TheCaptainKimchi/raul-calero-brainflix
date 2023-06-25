@@ -1,7 +1,8 @@
 @use "./partials/breakpoints" as *;
+@use "../styles/partials/variables" as *;
 
 .player {
-    background-color: #000000;
+    background-color: $s-black;
     video {
         width: 100%;
         aspect-ratio: 16/9;

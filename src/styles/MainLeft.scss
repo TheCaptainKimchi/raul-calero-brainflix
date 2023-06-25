@@ -1,5 +1,6 @@
 @use "./partials/breakpoints" as *;
+@use "./partials/variables" as *;
 
 .main__left {
-    border-right: 1px solid #E1E1E1;
+    border-right: 1px solid $s-mercury;
 }

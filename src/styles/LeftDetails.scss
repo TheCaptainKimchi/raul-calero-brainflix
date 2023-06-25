@@ -1,21 +1,22 @@
 @use "./partials/breakpoints" as *;
+@use "../styles/partials/variables" as *;
 
 .details {
-    padding: 1rem;
+    padding: $padding-s;
     &__title {
-        border-bottom: 1px #E1E1E1 solid;
+        border-bottom: 1px $s-mercury solid;
         margin: 0;
-        padding: 0.5rem 0 1rem 0;
+        padding: 0.5rem 0 $padding-s 0;
     }
     &__sub-info {
-        border-bottom: 1px #E1E1E1 solid;
+        border-bottom: 1px $s-mercury solid;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         .details__left {
             margin-right: 5rem;
             &-date {
-                color: #AFAFAF;
+                color: $p-silver;
             }
         }
         .details__right {
@@ -26,26 +27,26 @@
                 display: flex;
                 &-icon {
                     padding-right: 0.5rem;
-                    fill: #AFAFAF;
+                    fill: $p-silver;
                 }
                 p {
-                    color: #AFAFAF;
+                    color: $p-silver;
                 }
             }
             &-likes {
                 display: flex;
                 &-icon {
                     padding-right: 0.5rem;
-                    fill: #AFAFAF;
+                    fill: $p-silver;
                 }
                 p {
-                    color: #AFAFAF;
+                    color: $p-silver;
                 }
             }
         }
     }
     @include tablet {
-        padding: 1rem 2rem;
+        padding: $padding-s 2rem;
         &__title {
             border-bottom: 0;
             padding-bottom: 0;
@@ -74,10 +75,10 @@
     @include desktop {
         padding: 2rem 0 0 7rem;
         &__right {
-            padding-right: 1.5rem;
+            padding-right: $padding-m;
         }
         &__description {
-            padding-right: 1.5rem;
+            padding-right: $padding-m;
         }
     }
 }

@@ -3,15 +3,15 @@
 
 .header {
     width: 100%;
-    padding: 1rem;
+    padding: $padding-s;
     display: flex;
     flex-direction: column;
     align-items: center;
     &__logo {
-        background-color: white;
+        background-color: $p-white;
         img {
             width: 7.5rem;
-            height: 1.5rem;
+            height: $padding-m;
         }
     }
     &__tools {
@@ -19,30 +19,33 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding: 1rem 0;
+        padding: $padding-s 0;
         &-form {
             width: 100%;
             min-width: 15rem;
-            min-height: 2.25rem;
+            min-height: $padding-l;
             display: flex;
             align-items: center;
             position: relative;
             left: -15px;
             input {
-                padding-left: 1.5rem;
+                padding-left: $padding-m;
                 width: 93%;
                 height: 3rem;
-                background-color: #FAFAFA;
+                background-color: $s-alabaster;
                 border-radius: 4px;
             }
+            input:active {
+                border: $p-blue 2px solid;
+            }
             input::placeholder {
-                color: #323232;
+                color: $p-black;
             }
             img {
-                height: 1rem;
+                height: $padding-s;
                 position: relative;
-                left: 1.5rem;
-                fill: #323232;
+                left: $padding-m;
+                fill: $p-black;
             }
 
         }
@@ -60,14 +63,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #0095FF;
+            background-color: $p-blue;
             border: 0;
             width: 100%;
-            color: white;
+            color: $p-white;
             border-radius: 4px;
+            img {
+
+            }
             h3 {
                 width: 20rem;
             }
+        }
+        &-button:hover {
+            background-color: $s-blue;
+            cursor: pointer;
         }
         &-avatar {
             display: none;
@@ -78,15 +88,15 @@
         justify-content: flex-end;
         &__logo {
             position: absolute;
-            left: 1rem;
+            left: $padding-s;
             z-index: 2;
         }
         &__tools {
             width: 13rem;
-            margin-right: 1rem;
+            margin-right: $padding-s;
             &-avatar {
                 position: absolute;
-                right: 1rem;
+                right: $padding-s;
             }
         }
         &__upload {
@@ -96,7 +106,7 @@
 
     }
     @include desktop {
-        padding: 1rem 6rem;
+        padding: $padding-s 6rem;
         &__logo {
             left: 8rem;
         }

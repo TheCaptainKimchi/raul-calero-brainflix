@@ -1,17 +1,18 @@
 @use "../styles/partials/breakpoints" as *;
+@use "../styles/partials/variables" as *;
 
 .comments {
     &__cards {
-        margin: 0 1rem;
+        margin: 0 $padding-s;
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid #E1E1E1;
+        border-bottom: 1px solid $s-mercury;
         padding: 0;
         list-style: none;
         .comments__card {
             display: flex;
             padding: 0.5rem 0;
-            border-bottom: 1px solid #E1E1E1;
+            border-bottom: 1px solid $s-mercury;
             &-left img {
                 width: 2.5rem;
                 height: 2.5rem;
@@ -21,7 +22,7 @@
             &-right {
                 display: flex;
                 flex-direction: column;
-                padding: 0 0 0 1rem;
+                padding: 0 0 0 $padding-s;
                 &-top {
                     display: flex;
                     align-items: center;
@@ -30,13 +31,13 @@
                         margin: 0;
                     }
                     p {
-                        color: #AFAFAF;
+                        color: $p-silver;
                     }
                 }
                 &-bottom {
                     p {
                         margin: 0;
-                        padding: 1rem 0 0.5rem 0;
+                        padding: $padding-s 0 0.5rem 0;
                     }
                 }
             }
@@ -50,13 +51,13 @@
     }
     @include desktop {
         &__cards {
-            padding: 1rem 0 2rem 7rem;
+            padding: $padding-s 0 2rem 7rem;
             margin: 0;
             .comments__card {
                 padding-right: 2rem;
-                padding: 1rem 2rem 1rem 0;
+                padding: $padding-s 2rem $padding-s 0;
                 border-bottom: 0;
-                border-top: 1px solid #E1E1E1;
+                border-top: 1px solid $s-mercury;
             }
         }
     }
