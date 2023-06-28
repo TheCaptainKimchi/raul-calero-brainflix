@@ -2,12 +2,13 @@ import "../../../../styles/LeftComments.scss";
 
 function LeftComments(props) {
   const Comments = props.VideoDetails.comments;
-  const date = new Date(props.VideoDetails.timestamp);
-  const formattedDate = `${
-    date.getMonth() + 1
-  }/${date.getDate()}/${date.getFullYear()}`;
 
-  console.log(Comments);
+  function getDate(date) {
+    const commentDate = new Date(date.timestamp);
+    return `${
+      commentDate.getMonth() + 1
+    }/${commentDate.getDate()}/${commentDate.getFullYear()}`;
+  }
 
   return (
     <div className="comments">
@@ -21,7 +22,7 @@ function LeftComments(props) {
               <div className="comments__card-right">
                 <div className="comments__card-right-top">
                   <h3>{comment.name}</h3>
-                  <p>{formattedDate}</p>
+                  <p>{getDate(comment)}</p>
                 </div>
                 <div className="comments__card-right-bottom">
                   <p>{comment.comment}</p>
