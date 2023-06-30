@@ -1,7 +1,6 @@
 import "../../../styles/MainRight.scss";
 
 function MainRight(props) {
-  // console.log(props);
   const filteredVideos = props.Videos.filter((video) => {
     return video.id !== props.VideoDetails.id;
   });
