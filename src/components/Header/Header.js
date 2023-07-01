@@ -7,7 +7,7 @@ import "../../styles/Header.scss";
 function Header() {
   return (
     <div className="header">
-      <a className="header__logo">
+      <a className="header__logo" href="/">
         <img src={logo}></img>
       </a>
       <div className="header__tools">
@@ -26,10 +26,12 @@ function Header() {
         </a>
       </div>
       <div className="header__upload">
-        <button className="header__upload-button">
-          <img src={upload} className="header__upload-button-icon"></img>
-          <h3>UPLOAD</h3>
-        </button>
+        <a className="header__upload-a" href="/upload">
+          <button className="header__upload-a-button">
+            <img src={upload} className="header__upload-a-button-icon"></img>
+            <h3>UPLOAD</h3>
+          </button>
+        </a>
         <a className="header__upload-avatar">
           <img src={avatar}></img>
         </a>
