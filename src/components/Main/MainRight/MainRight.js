@@ -1,4 +1,5 @@
 import "../../../styles/MainRight.scss";
+import { Link } from "react-router-dom";
 
 function MainRight(props) {
   const filteredVideos = props.Videos.filter((video) => {
@@ -18,14 +19,16 @@ function MainRight(props) {
                   props.clickHandler(Videos);
                 }}
               >
-                <img
-                  className="videos__container-card-image"
-                  src={Videos.image}
-                ></img>
-                <div className="videos__container-card-text">
-                  <h3>{Videos.title}</h3>
-                  <p>{Videos.channel}</p>
-                </div>
+                <Link to={`/videos/${Videos.id}`}>
+                  <img
+                    className="videos__container-card-image"
+                    src={Videos.image}
+                  ></img>
+                  <div className="videos__container-card-text">
+                    <h3>{Videos.title}</h3>
+                    <p>{Videos.channel}</p>
+                  </div>
+                </Link>
               </li>
             );
           })}

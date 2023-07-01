@@ -16,6 +16,11 @@
             padding: 0 0 $padding-s 0;
             flex-direction: column;
             margin: 0;
+            a {
+                display: flex;
+                text-decoration: none;
+                color: $p-black;
+            }
             li {
                 height: 4rem;
                 list-style: none;
