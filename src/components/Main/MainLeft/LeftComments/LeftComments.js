@@ -17,7 +17,7 @@ function LeftComments({ VideoDetails }) {
           return (
             <li key={comment.id} className="comments__card">
               <div className="comments__card-left">
-                <img></img>
+                <img alt="comment-avatar"></img>
               </div>
               <div className="comments__card-right">
                 <div className="comments__card-right-top">

@@ -9,7 +9,7 @@ function LeftForm({ VideoDetails }) {
       <p className="form__subtitle">JOIN THE CONVERSATION</p>
       <div className="form__container">
         <div className="form__container-left">
-          <img src={avatar}></img>
+          <img src={avatar} alt="avatar-photo"></img>
         </div>
         <div className="form__container-right">
           <p className="form__container-right-title">JOIN THE CONVERSATION</p>
@@ -21,7 +21,7 @@ function LeftForm({ VideoDetails }) {
           ></input>
           <a className="form__container-right-post">
             <button className="form__right-post-button">
-              <img src={comment}></img>
+              <img src={comment} alt="post-icon"></img>
               <p>COMMENT</p>
             </button>
           </a>

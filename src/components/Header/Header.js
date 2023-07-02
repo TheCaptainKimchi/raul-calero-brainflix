@@ -12,7 +12,11 @@ function Header() {
       </a>
       <div className="header__tools">
         <form className="header__tools-form">
-          <img src={search} className="header__tools-form-icon"></img>
+          <img
+            src={search}
+            className="header__tools-form-icon"
+            alt="search-icon"
+          ></img>
           <input
             type="text"
             src={search}
@@ -22,18 +26,22 @@ function Header() {
           ></input>
         </form>
         <a className="header__tools-avatar">
-          <img src={avatar}></img>
+          <img src={avatar} alt="avatar-photo"></img>
         </a>
       </div>
       <div className="header__upload">
         <a className="header__upload-a" href="/upload">
           <button className="header__upload-a-button">
-            <img src={upload} className="header__upload-a-button-icon"></img>
+            <img
+              src={upload}
+              className="header__upload-a-button-icon"
+              alt="upload-icon"
+            ></img>
             <h3>UPLOAD</h3>
           </button>
         </a>
         <a className="header__upload-avatar">
-          <img src={avatar}></img>
+          <img src={avatar} alt="avatar-photo"></img>
         </a>
       </div>
     </div>

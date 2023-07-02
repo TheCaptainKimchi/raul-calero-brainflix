@@ -23,6 +23,7 @@ function MainRight({ Videos, clickHandler, VideoDetails }) {
                   <img
                     className="videos__container-card-image"
                     src={Videos.image}
+                    alt="video-thumbnail"
                   ></img>
                   <div className="videos__container-card-text">
                     <h3>{Videos.title}</h3>
