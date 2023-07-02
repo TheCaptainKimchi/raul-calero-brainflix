@@ -1,10 +1,8 @@
 import avatar from "../../../../assets/images/Mohan-muruge.jpg";
 import comment from "../../../../assets/images/icons/add_comment.svg";
-import "../../../../styles/LeftForm.scss";
+import "./LeftForm.scss";
 
-function LeftForm(props) {
-  const VideoDetails = props.VideoDetails;
-
+function LeftForm({ VideoDetails }) {
   return (
     <form className="form">
       <h3 className="form__total-comments">{`${VideoDetails.comments.length} Comments`}</h3>

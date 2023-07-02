@@ -1,9 +1,9 @@
 import MainLeft from "./MainLeft/MainLeft";
 import MainRight from "./MainRight/MainRight";
 import Player from "../Player/Player";
-import "../../styles/Main.scss";
+import "./Main.scss";
 
-function Main({ Videos, clickHandler, ApiDetails, VideoId }) {
+function Main({ Videos, clickHandler, ApiDetails }) {
   return (
     <div className="main-components">
       {ApiDetails && <Player ApiDetails={ApiDetails} />}

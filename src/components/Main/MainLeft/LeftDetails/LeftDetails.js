@@ -1,10 +1,8 @@
 import views from "../../../../assets/images/icons/views.svg";
 import likes from "../../../../assets/images/icons/likes.svg";
-import "../../../../styles/LeftDetails.scss";
+import "./LeftDetails.scss";
 
-function LeftDetails(props) {
-  const VideoDetails = props.VideoDetails;
-
+function LeftDetails({ VideoDetails }) {
   const date = new Date(VideoDetails.timestamp);
   const formattedDate = `${
     date.getMonth() + 1

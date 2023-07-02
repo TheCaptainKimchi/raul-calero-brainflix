@@ -1,15 +1,15 @@
 import LeftDetails from "./LeftDetails/LeftDetails";
 import LeftForm from "./LeftForm/LeftForm";
 import LeftComments from "./LeftComments/LeftComments";
-import "../../../styles/MainLeft.scss";
+import "./MainLeft.scss";
 
-function MainLeft(props) {
+function MainLeft({ VideoDetails }) {
   return (
     <div className="main__left">
       <div className="main__left-details"></div>
-      <LeftDetails VideoDetails={props.VideoDetails} />
-      <LeftForm VideoDetails={props.VideoDetails} />
-      <LeftComments VideoDetails={props.VideoDetails} />
+      <LeftDetails VideoDetails={VideoDetails} />
+      <LeftForm VideoDetails={VideoDetails} />
+      <LeftComments VideoDetails={VideoDetails} />
     </div>
   );
 }

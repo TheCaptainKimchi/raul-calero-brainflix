@@ -1,0 +1,6 @@
+@use "../../../styles/partials/breakpoints" as *;
+@use "../../../styles/partials/variables" as *;
+
+.main__left {
+    border-right: 1px solid $s-mercury;
+}

@@ -2,7 +2,7 @@ import logo from "../../assets/images/BrainFlix-logo.svg";
 import search from "../../assets/images/icons/search.svg";
 import avatar from "../../assets/images/Mohan-muruge.jpg";
 import upload from "../../assets/images/icons/upload.svg";
-import "../../styles/Header.scss";
+import "./Header.scss";
 
 function Header() {
   return (

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
-import Upload from "./components/Upload/Upload";
+import Upload from "./pages/Page/Page";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {

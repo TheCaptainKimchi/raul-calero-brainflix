@@ -1,7 +1,7 @@
-import "../../../../styles/LeftComments.scss";
+import "./LeftComments.scss";
 
-function LeftComments(props) {
-  const Comments = props.VideoDetails.comments;
+function LeftComments({ VideoDetails }) {
+  const Comments = VideoDetails.comments;
 
   function getDate(date) {
     const commentDate = new Date(date.timestamp);

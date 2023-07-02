@@ -1,9 +1,9 @@
-import "../../../styles/MainRight.scss";
+import "./MainRight.scss";
 import { Link } from "react-router-dom";
 
-function MainRight(props) {
-  const filteredVideos = props.Videos.filter((video) => {
-    return video.id !== props.VideoDetails.id;
+function MainRight({ Videos, clickHandler, VideoDetails }) {
+  const filteredVideos = Videos.filter((video) => {
+    return video.id !== VideoDetails.id;
   });
 
   return (
@@ -16,7 +16,7 @@ function MainRight(props) {
               <li
                 key={Videos.id}
                 onClick={() => {
-                  props.clickHandler(Videos);
+                  clickHandler(Videos);
                 }}
               >
                 <Link to={`/videos/${Videos.id}`}>

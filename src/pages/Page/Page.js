@@ -1,4 +1,4 @@
-import "./Upload.scss";
+import "./Page.scss";
 import UploadPreview from "../../assets/images/Upload-video-preview.jpg";
 import icon from "../../assets/images/icons/publish.svg";
 

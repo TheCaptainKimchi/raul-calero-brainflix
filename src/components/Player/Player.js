@@ -1,9 +1,9 @@
-import "../../styles/Player.scss";
+import "./Player.scss";
 
-function Player(props) {
+function Player({ ApiDetails }) {
   return (
     <div className="player">
-      <video poster={props.ApiDetails.image} controls></video>
+      <video poster={ApiDetails.image} controls></video>
     </div>
   );
 }
