@@ -7,7 +7,7 @@ import Upload from "./pages/Page/Page";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
-  const apiKey = "d2d7858f-a0fa-45aa-b09c-21ca5bcc6c18";
+  // const apiKey = "d2d7858f-a0fa-45aa-b09c-21ca5bcc6c18";
 
   const [videoId, setVideoId] = useState(
     "84e96018-4022-434e-80bf-000ce4cd12b8"
@@ -17,21 +17,15 @@ function App() {
   const [apiDetails, setApiDetails] = useState(null);
 
   useEffect(() => {
-    axios
-      .get(`https://project-2-api.herokuapp.com/videos/?api_key=${apiKey}`)
-      .then((response) => {
-        setApiList(response.data);
-      });
+    axios.get(`http://localhost:8080/videos`).then((response) => {
+      setApiList(response.data);
+    });
   }, []);
 
   useEffect(() => {
-    axios
-      .get(
-        `https://project-2-api.herokuapp.com/videos/${videoId}?api_key=${apiKey}`
-      )
-      .then((response) => {
-        setApiDetails(response.data);
-      });
+    axios.get(`http://localhost:8080/videos/${videoId}`).then((response) => {
+      setApiDetails(response.data);
+    });
   }, [videoId]);
 
   if (!apiList) {
