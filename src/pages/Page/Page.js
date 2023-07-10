@@ -1,9 +1,26 @@
 import "./Page.scss";
-import UploadPreview from "../../assets/images/Upload-video-preview.jpg";
 import icon from "../../assets/images/icons/publish.svg";
 import axios from "axios";
+import { useState, useEffect } from "react";
 
 const Upload = () => {
+  const [imageURL, setImageURL] = useState("");
+  useEffect(() => {
+    fetch("http://localhost:8080/images/Upload-video-preview.jpg")
+      .then((response) => {
+        if (response.ok) {
+          return response.blob();
+        }
+        throw new Error("Network response was not ok.");
+      })
+      .then((blob) => {
+        setImageURL(URL.createObjectURL(blob));
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   function submitHandler(e) {
     e.preventDefault();
     const titleValue = e.target.title.value;
@@ -23,7 +40,7 @@ const Upload = () => {
       <div className="upload__left-right">
         <div className="upload__left">
           <p className="upload__left-title">VIDEO THUMBNAIL</p>
-          <img src={UploadPreview} alt="thumbnail-preview"></img>
+          <img src={imageURL} alt="thumbnail-preview"></img>
         </div>
         <div className="upload__right">
           <form className="upload__right-form" onSubmit={submitHandler}>

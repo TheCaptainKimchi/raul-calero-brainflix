@@ -50,11 +50,9 @@
             .input:active {
                 border: 2px solid $p-blue;
             }
-            a {
-                width: 100%;
-                margin-top: $padding-m;
-                text-decoration: none;
                 button {
+                    margin-top: $padding-m;
+                    height: 2.5rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -74,7 +72,6 @@
                         font-weight: $lb-m-weight;
                       }
                 }
-            }
             .upload__right-cancel {
                 color: $p-blue;
                 text-decoration: none;
@@ -99,7 +96,7 @@
         &__right-form {
             border-bottom: 1px solid $s-mercury;
             padding-bottom: 2rem;
-            a {
+            button {
                 position: absolute;
                 width: 10rem;
                 right: 2rem;
@@ -132,7 +129,7 @@
                     padding-bottom: 0;
                 }
                 width: 100%;
-                &-form-container {
+                &-form-button {
                     bottom: 24rem;
                     right: 5rem;
                 }
