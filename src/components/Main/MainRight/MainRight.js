@@ -1,7 +1,10 @@
 import "./MainRight.scss";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function MainRight({ Videos, clickHandler, VideoDetails }) {
+  const { videoId } = useParams();
+
   const filteredVideos = Videos.filter((video) => {
     return video.id !== VideoDetails.id;
   });
@@ -19,7 +22,7 @@ function MainRight({ Videos, clickHandler, VideoDetails }) {
                   clickHandler(Videos);
                 }}
               >
-                <Link to={`/videos/${Videos.id}`}>
+                <Link to={`/videos/${videoId}`}>
                   <img
                     className="videos__container-card-image"
                     src={`http://localhost:8080/images/${Videos.image}`}
