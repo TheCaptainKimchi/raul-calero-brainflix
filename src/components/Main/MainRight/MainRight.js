@@ -22,7 +22,7 @@ function MainRight({ Videos, clickHandler, VideoDetails }) {
                 <Link to={`/videos/${Videos.id}`}>
                   <img
                     className="videos__container-card-image"
-                    src={Videos.image}
+                    src={`http://localhost:8080/images/${Videos.image}`}
                     alt="video-thumbnail"
                   ></img>
                   <div className="videos__container-card-text">
