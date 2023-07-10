@@ -2,6 +2,7 @@ import "./Page.scss";
 import icon from "../../assets/images/icons/publish.svg";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Upload = () => {
   const [imageURL, setImageURL] = useState("");
@@ -67,9 +68,9 @@ const Upload = () => {
               <p>PUBLISH</p>
             </button>
 
-            <a className="upload__right-cancel" href="/">
+            <Link to={`/`} className="upload__right-cancel">
               <p className="upload__right-form-cancel">CANCEL</p>
-            </a>
+            </Link>
           </form>
         </div>
       </div>

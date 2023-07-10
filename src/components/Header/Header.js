@@ -3,13 +3,14 @@ import search from "../../assets/images/icons/search.svg";
 import avatar from "../../assets/images/Mohan-muruge.jpg";
 import upload from "../../assets/images/icons/upload.svg";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
-      <a className="header__logo" href="/">
+      <Link to={`/`} className="header__logo">
         <img src={logo}></img>
-      </a>
+      </Link>
       <div className="header__tools">
         <form className="header__tools-form">
           <img
@@ -30,7 +31,7 @@ function Header() {
         </a>
       </div>
       <div className="header__upload">
-        <a className="header__upload-a" href="/upload">
+        <Link to={`/upload`} className="header__upload-a">
           <button className="header__upload-a-button">
             <img
               src={upload}
@@ -39,7 +40,7 @@ function Header() {
             ></img>
             <h3>UPLOAD</h3>
           </button>
-        </a>
+        </Link>
         <a className="header__upload-avatar">
           <img src={avatar} alt="avatar-photo"></img>
         </a>

@@ -17,15 +17,25 @@ function App() {
   const [apiDetails, setApiDetails] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/videos`).then((response) => {
-      setApiList(response.data);
-    });
+    axios
+      .get(`http://localhost:8080/videos`)
+      .then((response) => {
+        setApiList(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/videos/${videoId}`).then((response) => {
-      setApiDetails(response.data);
-    });
+    axios
+      .get(`http://localhost:8080/videos/${videoId}`)
+      .then((response) => {
+        setApiDetails(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, [videoId]);
 
   if (!apiList) {

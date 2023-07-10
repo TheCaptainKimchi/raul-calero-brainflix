@@ -3,6 +3,10 @@ import comment from "../../../../assets/images/icons/add_comment.svg";
 import "./LeftForm.scss";
 
 function LeftForm({ VideoDetails }) {
+  function clickHandler(e) {
+    e.preventDefault();
+    console.log("Comment Posted");
+  }
   return (
     <form className="form">
       <h3 className="form__total-comments">{`${VideoDetails.comments.length} Comments`}</h3>
@@ -20,7 +24,7 @@ function LeftForm({ VideoDetails }) {
             name="comment"
           ></input>
           <a className="form__container-right-post">
-            <button className="form__right-post-button">
+            <button className="form__right-post-button" onClick={clickHandler}>
               <img src={comment} alt="post-icon"></img>
               <p>COMMENT</p>
             </button>
